@@ -19,7 +19,7 @@ function repo_init(){
         'function': '',
         'runs': 100,
       },
-      'storage-menu': '<table><tr><td><input id=function><td>Function'
+      'storage-menu': '<table><tr><td><input id=function type=text><td>Function'
         + '<tr><td><textarea id=args></textarea><td>Args'
         + '<tr><td><input id=runs min=1 step=any type=number><td>Runs</table>',
       'title': 'Profiler.htm',
