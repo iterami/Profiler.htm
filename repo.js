@@ -33,6 +33,7 @@ function repo_init(){
         + '<input id=profile type=button value=Profile>',
       'menu': true,
       'menu-block-events': false,
+      'menu-lock': true,
       'storage': {
         'args': '{}',
         'function': '',
