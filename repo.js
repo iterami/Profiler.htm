@@ -3,8 +3,13 @@
 function profile(){
     core_storage_save();
 
+    const testing = eval(core_storage_data['function']);
+    if(core_type(testing) !== 'function'){
+        return;
+    }
+
     const result = test_time({
-      'function': eval(core_storage_data['function']),
+      'function': testing,
       'function-args': JSON.parse(core_storage_data['args']),
       'runs': core_storage_data['runs'],
     });
