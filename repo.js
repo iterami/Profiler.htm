@@ -3,23 +3,23 @@
 function profile(){
     core_storage_save();
 
-    const testing = globalThis.eval(core_storage_data['function']);
+    const testing = globalThis.eval(core_storage_data.function);
     if(core_type(testing) !== 'function'){
         return;
     }
 
     const result = test_time({
       'function': testing,
-      'function-args': JSON.parse(core_storage_data['args']),
-      'runs': core_storage_data['runs'],
+      'function-args': JSON.parse(core_storage_data.args),
+      'runs': core_storage_data.runs,
     });
 
     core_ui_update({
       'ids': {
-        'average': result['average'],
-        'max': result['max'],
-        'min': result['min'],
-        'total': result['total'],
+        'average': result.average,
+        'max': result.max,
+        'min': result.min,
+        'total': result.total,
       },
     });
 }
