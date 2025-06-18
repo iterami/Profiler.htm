@@ -37,7 +37,7 @@ function repo_init(){
         + '<tr><td id=total><td>Total</table>'
         + '<button id=profile type=button>Profile</button>',
       'menu_block_events': false,
-      'menu-lock': true,
+      'menu_lock': true,
       'storage': {
         'args': '{}',
         'function': '',
