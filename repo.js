@@ -8,7 +8,7 @@ function profile(){
 
     const result = test_time({
       'function': testing,
-      'function-args': JSON.parse(core_storage_data.args),
+      'function_args': JSON.parse(core_storage_data.args),
       'runs': core_storage_data.runs,
     });
 
