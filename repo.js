@@ -33,7 +33,7 @@ function repo_init(){
         + '<tr><td id=max><td>Max'
         + '<tr><td id=min><td>Min'
         + '<tr><td id=total><td>Total</table>'
-        + '<button id=profile type=button>Profile</button>',
+        + '<button class=medium id=profile type=button>Profile</button>',
       'menu_block_events': false,
       'menu_lock': true,
       'storage': {
