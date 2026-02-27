@@ -7,9 +7,9 @@ function profile(){
     }
 
     const result = test_time({
-      'function': testing,
-      'function_args': JSON.parse(core_storage_data.args),
+      'args': JSON.parse(core_storage_data.args),
       'runs': core_storage_data.runs,
+      'todo': testing,
     });
 
     core_ui_update({
