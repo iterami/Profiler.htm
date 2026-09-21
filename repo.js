@@ -2,7 +2,7 @@
 
 function profile(){
     const testing = globalThis.eval(core_storage_data.function);
-    if(core_type(testing) !== 'function'){
+    if(core_type(testing) !== 'Function'){
         return;
     }
 
